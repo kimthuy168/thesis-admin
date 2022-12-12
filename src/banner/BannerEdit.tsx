@@ -7,7 +7,6 @@ import {
   DateTimeInput,
   TextInput,
 } from "react-admin";
-
 export const BannerEdit = (props: EditProps): React.ReactElement => {
   return (
     <Edit {...props}>
