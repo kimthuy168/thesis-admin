@@ -12,6 +12,14 @@ export const BannerCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
+        <TextInput
+          style={{
+            width: "50%",
+            marginLeft: "20%",
+          }}
+          label="Name"
+          source="name"
+        />
         <SelectInput
           style={{
             width: "50%",
@@ -20,10 +28,10 @@ export const BannerCreate = (props: CreateProps): React.ReactElement => {
           source="bannerType"
           label="Banner Type"
           choices={[
-            { label: "Promotion", value: "Promotion" },
-            { label: "Main", value: "Main" },
-            { label: "Splash Screen", value: "SplashScreen" },
-            { label: "Carousel", value: "Carousel" },
+            { label: "Buy 1 Free 1", value: "Buy 1 Free 1" },
+            { label: "Discount ", value: "Discount" },
+            { label: "Shop Event", value: "Shop Event" },
+            { label: "Holiday", value: "Holiday" },
           ]}
           optionText="label"
           optionValue="value"
@@ -75,14 +83,6 @@ export const BannerCreate = (props: CreateProps): React.ReactElement => {
           }}
           label="Image"
           source="image"
-        />
-        <TextInput
-          style={{
-            width: "50%",
-            marginLeft: "20%",
-          }}
-          label="Name"
-          source="name"
         />
       </SimpleForm>
     </Create>
