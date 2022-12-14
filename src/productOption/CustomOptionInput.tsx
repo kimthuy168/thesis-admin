@@ -43,7 +43,7 @@ export const CustomOptionInput = (props: any) => {
     if (options) {
       onChange({ data: options });
     }
-  }, [options]);
+  }, [onChange, options]);
 
   return (
     <>

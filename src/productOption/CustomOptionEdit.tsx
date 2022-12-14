@@ -44,7 +44,7 @@ export const CustomOptionEdit = (props: any) => {
     if (options) {
       onChange({ data: options });
     }
-  }, [options]);
+  }, [onChange, options]);
 
   return (
     <>

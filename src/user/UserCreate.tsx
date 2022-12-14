@@ -4,14 +4,14 @@ import {
   Create,
   SimpleForm,
   CreateProps,
-  ReferenceArrayInput,
+  // ReferenceArrayInput,
   SelectArrayInput,
   TextInput,
   PasswordInput,
 } from "react-admin";
 
-import { CartTitle } from "../cart/CartTitle";
-import { OrderTitle } from "../order/OrderTitle";
+// import { CartTitle } from "../cart/CartTitle";
+// import { OrderTitle } from "../order/OrderTitle";
 import { ROLES_OPTIONS } from "../user/RolesOptions";
 
 export const UserCreate = (props: CreateProps): React.ReactElement => {

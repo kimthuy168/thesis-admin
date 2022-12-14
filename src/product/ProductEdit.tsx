@@ -12,7 +12,7 @@ import {
   SelectInput,
 } from "react-admin";
 
-import { CartProductTitle } from "../cartProduct/CartProductTitle";
+// import { CartProductTitle } from "../cartProduct/CartProductTitle";
 import { MerchantTitle } from "../merchant/MerchantTitle";
 import { ProductAddonTitle } from "../productAddon/ProductAddonTitle";
 import { ProductCategoryTitle } from "../productCategory/ProductCategoryTitle";

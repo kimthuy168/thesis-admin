@@ -6,8 +6,8 @@ import {
   TextField,
   DateField,
   ReferenceField,
-  TabbedForm,
-  ReferenceManyField,
+  // TabbedForm,
+  // ReferenceManyField,
 } from "react-admin";
 import Pagination from "../Components/Pagination";
 import { MERCHANT_TITLE_FIELD } from "../merchant/MerchantTitle";
