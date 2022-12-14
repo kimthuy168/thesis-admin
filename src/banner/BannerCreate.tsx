@@ -33,6 +33,14 @@ export const BannerCreate = (props: CreateProps): React.ReactElement => {
             width: "50%",
             marginLeft: "20%",
           }}
+          label="Start Date"
+          source="startDate"
+        />
+        <DateTimeInput
+          style={{
+            width: "50%",
+            marginLeft: "20%",
+          }}
           label="End Date"
           source="endDate"
         />
@@ -75,14 +83,6 @@ export const BannerCreate = (props: CreateProps): React.ReactElement => {
           }}
           label="Name"
           source="name"
-        />
-        <DateTimeInput
-          style={{
-            width: "50%",
-            marginLeft: "20%",
-          }}
-          label="Start Date"
-          source="startDate"
         />
       </SimpleForm>
     </Create>
