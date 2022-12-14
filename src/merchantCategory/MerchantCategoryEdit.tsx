@@ -10,7 +10,6 @@ import {
 } from "react-admin";
 
 import { MerchantTitle } from "../merchant/MerchantTitle";
-
 export const MerchantCategoryEdit = (props: EditProps): React.ReactElement => {
   return (
     <Edit {...props}>
