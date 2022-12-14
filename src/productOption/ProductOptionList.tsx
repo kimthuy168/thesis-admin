@@ -14,7 +14,7 @@ export const ProductOptionList = (props: ListProps): React.ReactElement => {
   return (
     <List
       {...props}
-      bulkActionButtons={false}
+      bulkActionButtons={true}
       title={"Product Options"}
       perPage={50}
       pagination={<Pagination />}

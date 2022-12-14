@@ -6,7 +6,7 @@ export const UserList = (props: ListProps): React.ReactElement => {
   return (
     <List
       {...props}
-      bulkActionButtons={false}
+      bulkActionButtons={true}
       title={"Users"}
       perPage={50}
       pagination={<Pagination />}
