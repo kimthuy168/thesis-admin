@@ -1,4 +1,6 @@
+import { Button } from "@mantine/core";
 import * as React from "react";
+import { useRef } from "react";
 import {
   List,
   Datagrid,
@@ -7,31 +9,55 @@ import {
   TextField,
   ReferenceField,
 } from "react-admin";
+import { useReactToPrint } from "react-to-print";
 import Pagination from "../Components/Pagination";
 import { PRODUCT_TITLE_FIELD } from "../product/ProductTitle";
 
 export const ProductPromotionList = (props: ListProps): React.ReactElement => {
+  const ReftableToPrint = useRef(null);
+  const handleToPrint = useReactToPrint({
+    content: () => ReftableToPrint.current,
+  });
   return (
-    <List
-      {...props}
-      bulkActionButtons={true}
-      title={"Product Promotions"}
-      perPage={50}
-      pagination={<Pagination />}
-    >
-      <Datagrid rowClick="show">
-        <DateField source="createdAt" label="Created At" />
-        <TextField label="End Date" source="endDate" />
-        <TextField label="ID" source="id" />
-        <TextField label="Label" source="label" />
-        <ReferenceField label="Product" source="product.id" reference="Product">
-          <TextField source={PRODUCT_TITLE_FIELD} />
-        </ReferenceField>
-        <TextField label="Promotion Type" source="promotionType" />
-        <TextField label="Start Date" source="startDate" />
-        <DateField source="updatedAt" label="Updated At" />
-        <TextField label="Value" source="value" />
-      </Datagrid>
-    </List>
+    <>
+      <List
+        {...props}
+        bulkActionButtons={true}
+        title={"Product Promotions"}
+        perPage={50}
+        pagination={<Pagination />}
+      >
+        <Datagrid rowClick="show" ref={ReftableToPrint}>
+          <DateField source="createdAt" label="Created At" />
+          <TextField label="End Date" source="endDate" />
+          <TextField label="ID" source="id" />
+          <TextField label="Label" source="label" />
+          <ReferenceField
+            label="Product"
+            source="product.id"
+            reference="Product"
+          >
+            <TextField source={PRODUCT_TITLE_FIELD} />
+          </ReferenceField>
+          <TextField label="Promotion Type" source="promotionType" />
+          <TextField label="Start Date" source="startDate" />
+          <DateField source="updatedAt" label="Updated At" />
+          <TextField label="Value" source="value" />
+        </Datagrid>
+      </List>
+      <Button
+        onClick={handleToPrint}
+        style={{
+          marginTop: "6px",
+          width: "5rem",
+          height: "30px",
+          display: "flex",
+          justifyContent: "right",
+          alignItems: "center",
+        }}
+      >
+        Print
+      </Button>
+    </>
   );
 };
