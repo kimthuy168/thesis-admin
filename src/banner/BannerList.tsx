@@ -13,7 +13,7 @@ export const BannerList = (props: ListProps): React.ReactElement => {
     <>
       <List
         {...props}
-        bulkActionButtons={true}
+        bulkActionButtons={false}
         title={"Banners"}
         perPage={50}
         pagination={<Pagination />}

@@ -27,7 +27,7 @@ export const CartList = (props: ListProps): React.ReactElement => {
     <>
       <List
         {...props}
-        bulkActionButtons={true}
+        bulkActionButtons={false}
         title={"Carts"}
         perPage={50}
         pagination={<Pagination />}

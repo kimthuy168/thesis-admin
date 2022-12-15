@@ -14,7 +14,7 @@ export const MerchantCategoryList = (props: ListProps): React.ReactElement => {
     <>
       <List
         {...props}
-        bulkActionButtons={true}
+        bulkActionButtons={false}
         title={"Merchant Categories"}
         perPage={50}
         pagination={<Pagination />}

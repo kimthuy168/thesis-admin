@@ -14,7 +14,7 @@ export const CouponList = (props: ListProps): React.ReactElement => {
     <>
       <List
         {...props}
-        bulkActionButtons={true}
+        bulkActionButtons={false}
         title={"Coupons"}
         perPage={50}
         pagination={<Pagination />}

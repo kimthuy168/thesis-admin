@@ -16,7 +16,8 @@ import {
 import { MerchantTitle } from "../merchant/MerchantTitle";
 import { ProductAddonTitle } from "../productAddon/ProductAddonTitle";
 import { ProductCategoryTitle } from "../productCategory/ProductCategoryTitle";
-import { ProductTrackingTitle } from "../productTracking/ProductTrackingTitle";
+// import { ProductTrackingTitle } from "../productTracking/ProductTrackingTitle";
+
 import { ProductOptionTitle } from "../productOption/ProductOptionTitle";
 import { ProductPromotionTitle } from "../productPromotion/ProductPromotionTitle";
 // import { Input } from "@mantine/core";
@@ -106,7 +107,7 @@ export const ProductCreate = (props: CreateProps): React.ReactElement => {
           >
             <SelectArrayInput optionText={ProductCategoryTitle} />
           </ReferenceArrayInput>
-          <ReferenceInput
+          {/* <ReferenceInput
             style={{
               width: "50%",
               marginLeft: "20%",
@@ -116,7 +117,7 @@ export const ProductCreate = (props: CreateProps): React.ReactElement => {
             label="Product Count"
           >
             <SelectInput optionText={ProductTrackingTitle} />
-          </ReferenceInput>
+          </ReferenceInput> */}
           <ReferenceArrayInput
             style={{
               width: "50%",
