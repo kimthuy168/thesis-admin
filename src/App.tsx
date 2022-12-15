@@ -25,10 +25,10 @@ import { ProductCategoryList } from "./productCategory/ProductCategoryList";
 import { ProductCategoryCreate } from "./productCategory/ProductCategoryCreate";
 import { ProductCategoryEdit } from "./productCategory/ProductCategoryEdit";
 import { ProductCategoryShow } from "./productCategory/ProductCategoryShow";
-// import { ProductTrackingList } from "./productTracking/ProductTrackingList";
-// import { ProductTrackingCreate } from "./productTracking/ProductTrackingCreate";
-// import { ProductTrackingEdit } from "./productTracking/ProductTrackingEdit";
-// import { ProductTrackingShow } from "./productTracking/ProductTrackingShow";
+import { ProductTrackingList } from "./productTracking/ProductTrackingList";
+import { ProductTrackingCreate } from "./productTracking/ProductTrackingCreate";
+import { ProductTrackingEdit } from "./productTracking/ProductTrackingEdit";
+import { ProductTrackingShow } from "./productTracking/ProductTrackingShow";
 import { OrderList } from "./order/OrderList";
 import { OrderCreate } from "./order/OrderCreate";
 import { OrderEdit } from "./order/OrderEdit";
@@ -53,10 +53,10 @@ import { CouponList } from "./coupon/CouponList";
 import { CouponCreate } from "./coupon/CouponCreate";
 import { CouponEdit } from "./coupon/CouponEdit";
 import { CouponShow } from "./coupon/CouponShow";
-// import { CartProductList } from "./cartProduct/CartProductList";
-// import { CartProductCreate } from "./cartProduct/CartProductCreate";
-// import { CartProductEdit } from "./cartProduct/CartProductEdit";
-// import { CartProductShow } from "./cartProduct/CartProductShow";
+import { CartProductList } from "./cartProduct/CartProductList";
+import { CartProductCreate } from "./cartProduct/CartProductCreate";
+import { CartProductEdit } from "./cartProduct/CartProductEdit";
+import { CartProductShow } from "./cartProduct/CartProductShow";
 import { ProductPromotionList } from "./productPromotion/ProductPromotionList";
 import { ProductPromotionCreate } from "./productPromotion/ProductPromotionCreate";
 import { ProductPromotionEdit } from "./productPromotion/ProductPromotionEdit";
@@ -71,12 +71,12 @@ import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LoyaltyIcon from "@material-ui/icons/Loyalty";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
-// import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import AddToQueueIcon from "@material-ui/icons/AddToQueue";
 import ShopTwoIcon from "@material-ui/icons/ShopTwo";
 import DevicesIcon from "@material-ui/icons/Devices";
-// import TimelineIcon from "@material-ui/icons/Timeline";
+import TimelineIcon from "@material-ui/icons/Timeline";
 import CustomLayout from "./custom/CustomLayout";
 import { MantineProvider } from "@mantine/core";
 
@@ -148,7 +148,7 @@ const App = (): React.ReactElement => {
             options={{ label: "Product Category" }}
             icon={CategoryIcon}
           />
-          {/* <Resource
+          <Resource
             name="ProductTracking"
             list={ProductTrackingList}
             edit={ProductTrackingEdit}
@@ -156,7 +156,7 @@ const App = (): React.ReactElement => {
             show={ProductTrackingShow}
             options={{ label: "Product Tracking" }}
             icon={TimelineIcon}
-          /> */}
+          />
           <Resource
             name="Order"
             list={OrderList}
@@ -207,7 +207,7 @@ const App = (): React.ReactElement => {
             show={CouponShow}
             icon={CardGiftcardIcon}
           />
-          {/* <Resource
+          <Resource
             name="CartProduct"
             list={CartProductList}
             edit={CartProductEdit}
@@ -215,7 +215,7 @@ const App = (): React.ReactElement => {
             show={CartProductShow}
             options={{ label: "Cart Products" }}
             icon={AddShoppingCartIcon}
-          /> */}
+          />
           <Resource
             name="ProductPromotion"
             list={ProductPromotionList}
