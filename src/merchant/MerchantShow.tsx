@@ -26,7 +26,6 @@ export const MerchantShow = (props: ShowProps): React.ReactElement => {
       <SimpleShowLayout>
         <TextField label="Address" source="address" />
         <TextField label="Base Delivery Fee" source="baseDeliveryFee" />
-        <TextField label="Coordinate" source="coordinate" />
         <DateField source="createdAt" label="Created At" />
         <TextField label="Description" source="description" />
         <TextField label="ID" source="id" />
